@@ -16,6 +16,7 @@ public class VerificacaoServico {
         boolean contratado = false;
         
         // TODO: Verifique se o serviço está na lista de serviços contratados
+        if (servico = )
         
         scanner.close();
     }
