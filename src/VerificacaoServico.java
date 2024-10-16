@@ -16,12 +16,19 @@ public class VerificacaoServico {
         boolean contratado = false;
         
         // TODO: Verifique se o serviço está na lista de serviços contratados
-        if ( servico = "movel") {
-          System.out.println(Sim);
+        boolean encontrada = false;
+        for (String partesCliente : partes ) {
+            if (partesCliente.trim().equalsIgnoreCase(servico)) {
+                encontrada = true;
+                break;
+            }
         }
-        else {
-          System.out.println(Nao);
-        }
+
+        if (encontrada) {
+          System.out.println("Sim");
+      } else {
+          System.out.println("Nao");
+      }
         
         scanner.close();
     }
